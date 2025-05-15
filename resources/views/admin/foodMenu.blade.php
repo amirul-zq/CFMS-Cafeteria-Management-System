@@ -49,6 +49,7 @@
 
             </form>
 
+
             <div class="table-container" style="overflow-x: auto; margin-top: 40px;">
                 <p style="color: white;">Total food items: {{ count($data) }}</p>
 
@@ -58,26 +59,28 @@
                         <th scope="col">Price</th>
                         <th scope="col">Description</th>
                         <th scope="col">Image</th>
-                        <th scope="col">Action</th>
+                        <th scope="col">Activity</th>
+                        <th scope="col">Activity</th>
                     </tr>
 
                     @foreach ($data as $food)
-                        <tr align="center">
-                            <td>{{$food->title}}</td>
-                            <td>{{$food->price}}</td>
-                            <td style="max-width: 400px; white-space: normal; word-break: break-word;">
-                                {{$food->description}}
-                            </td>
-                            <td>
-                                @if($food->image)
-                                    <img src="/food_image/{{ $food->image }}" width="100">
-                                @else
-                                    <span style="color:red;">No Image</span>
-                                @endif
-                            </td>
-                            <td><a href="{{url('/deleteMenu', $food->id)}}">Delete</td>
+                    <tr align="center">
+                        <td>{{$food->title}}</td>
+                        <td>{{$food->price}}</td>
+                        <td style="max-width: 400px; white-space: normal; word-break: break-word;">
+                            {{$food->description}}
+                        </td>
+                        <td>
+                            @if($food->image)
+                            <img src="/food_image/{{ $food->image }}" width="100">
+                            @else
+                            <span style="color:red;">No Image</span>
+                            @endif
+                        </td>
+                        <td><a href="{{url('/deleteMenu', $food->id)}}">Delete</td>
+                        <td><a href="{{url('/updateMenu', $food->id)}}">Update</td>
 
-                        </tr>
+                    </tr>
 
                     @endforeach
 

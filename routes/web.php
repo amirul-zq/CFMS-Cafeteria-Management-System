@@ -24,6 +24,10 @@ Route::get("/deleteUser/{id}",[AdminController::class,"deleteUser"])->name('dele
 
 Route::get("/deleteMenu/{id}",[AdminController::class,"deleteMenu"])->name('deleteMenu');
 
+Route::get("/updateMenu/{id}",[AdminController::class,"updateMenu"])->name('updateMenu');
+
+Route::post("/update/{id}",[AdminController::class,"update"])->name('update');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
