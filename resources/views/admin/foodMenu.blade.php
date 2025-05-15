@@ -14,7 +14,7 @@
 
         @include("admin.navbar")
 
-        <div style="position: relative; top: 60px; right: -150px;">
+        <div style="margin-top: 60px; margin-left: 150px;">
             <form action="{{url('/uploadItems')}}" method="post" enctype="multipart/form-data">
 
                 @csrf
@@ -37,7 +37,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="description">Description</label>
+                    <label for="description" class="form-label">Description</label>
                     <input style="color: whitesmoke" type="text" class="form-control" name="description"
                         id="description" placeholder="Write description" required>
                 </div>
@@ -48,11 +48,47 @@
 
 
             </form>
+
+            <div class="table-container" style="overflow-x: auto; margin-top: 40px;">
+                <p style="color: white;">Total food items: {{ count($data) }}</p>
+
+                <table class="table table-bordered table-dark">
+                    <tr align="center">
+                        <th scope="col">Food Name</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Action</th>
+                    </tr>
+
+                    @foreach ($data as $food)
+                        <tr align="center">
+                            <td>{{$food->title}}</td>
+                            <td>{{$food->price}}</td>
+                            <td style="max-width: 400px; white-space: normal; word-break: break-word;">
+                                {{$food->description}}
+                            </td>
+                            <td>
+                                @if($food->image)
+                                    <img src="/food_image/{{ $food->image }}" width="100">
+                                @else
+                                    <span style="color:red;">No Image</span>
+                                @endif
+                            </td>
+                            <td><a href="{{url('/deleteMenu', $food->id)}}">Delete</td>
+
+                        </tr>
+
+                    @endforeach
+
+                </table>
+            </div>
+
         </div>
 
     </div>
 
-    @include("admin.admin_script");
+    @include("admin.admin_script")
 
 </body>
 

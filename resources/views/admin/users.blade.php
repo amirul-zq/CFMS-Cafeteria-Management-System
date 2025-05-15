@@ -14,7 +14,7 @@
     <div class="container-scroller">
 
         @include("admin.navbar")
-        <div style="position: relative; top: 60px; right: -150px;">
+        <div style="margin-top: 60px; margin-left: 150px;">
             <table class="table table-dark table-bordered">
                 <tr>
                     <th>Name</th>
@@ -23,16 +23,16 @@
                 </tr>
 
                 @foreach ($data as $user)
-                <tr>
-                    <th>{{$user->name}}</th>
-                    <th>{{$user->email}}</th>
+                    <tr>
+                        <th>{{$user->name}}</th>
+                        <th>{{$user->email}}</th>
 
-                    @if($user->user_type == "admin")
-                    <th><a>Not Allowed</a></th>
-                    @else
-                    <th><a href={{url('/deleteUser',$user->id)}}>Delete</a></th>
-                    @endif
-                </tr>
+                        @if($user->user_type == "admin")
+                            <th><a>Not Allowed</a></th>
+                        @else
+                            <th><a href={{url('/deleteUser', $user->id)}}>Delete</a></th>
+                        @endif
+                    </tr>
                 @endforeach
 
             </table>

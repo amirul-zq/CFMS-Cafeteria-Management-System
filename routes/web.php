@@ -22,6 +22,8 @@ Route::post("/uploadItems",[AdminController::class,"uploadItems"])->name('upload
 
 Route::get("/deleteUser/{id}",[AdminController::class,"deleteUser"])->name('deleteUser');
 
+Route::get("/deleteMenu/{id}",[AdminController::class,"deleteMenu"])->name('deleteMenu');
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
