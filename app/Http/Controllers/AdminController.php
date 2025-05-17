@@ -5,6 +5,10 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use \App\Models\User;
 use \App\Models\Food;
+use \App\Models\Reservation;
+use \App\Models\Chefs;
+use Laravel\Sanctum\Http\Middleware\CheckForAnyScope;
+
 
 class AdminController extends Controller
 {
@@ -38,6 +42,44 @@ class AdminController extends Controller
     {
         $data = food::find($id);
         return view("admin.updateMenu", compact("data"));
+    }
+
+    public function viewReservation ()
+    {
+        $data = reservation::all();
+        return view("admin.adminReservation", compact("data"));
+    }
+
+    public function viewChef ()
+    {
+
+        return view("admin.adminChef");
+    }
+
+    public function uploadChefInfo (Request $request)
+    {
+        $data = new chefs;
+
+        $image = $request->image;
+
+        $imageName = time().'.'.$image->getClientOriginalExtension();
+
+        $request->image->move('chef_image',$imageName);
+
+        $data->image = $imageName;
+
+        $data->name = $request->name;
+
+        $data->speciality = $request->speciality;
+
+        $data->speciality = $request->speciality;
+
+        $data->signatureDishes = $request->signatureDishes;
+
+        $data->save();
+
+        return redirect()->back();
+
     }
 
      public function update (Request $request, $id)
@@ -85,6 +127,29 @@ class AdminController extends Controller
         $foodInfo->description = $request->description;
 
         $foodInfo->save();
+
+        return redirect()->back();
+    }
+
+    public function reservation (Request $request)
+    {
+        $data = new reservation;
+
+        $data->name = $request->name;
+
+        $data->email = $request->email;
+
+        $data->phone = $request->phone;
+
+        $data->guest = $request->guest;
+
+        $data->date = $request->date;
+
+        $data->time = $request->time;
+
+        $data->message = $request->message;
+
+         $data->save();
 
         return redirect()->back();
     }

@@ -14,6 +14,8 @@ Route::get("/",[HomeController::class,"index"])->name('/');
 
 Route::get("/redirects",[HomeController::class,"redirects"])->name('redirects');
 
+Route::get('/chefs', [HomeController::class, 'chefs'])->name('chefs');
+
 Route::get("/users",[AdminController::class,"user"])->name('users');
 
 Route::get("/foodMenu",[AdminController::class,"foodMenu"])->name('foodMenu');
@@ -27,6 +29,16 @@ Route::get("/deleteMenu/{id}",[AdminController::class,"deleteMenu"])->name('dele
 Route::get("/updateMenu/{id}",[AdminController::class,"updateMenu"])->name('updateMenu');
 
 Route::post("/update/{id}",[AdminController::class,"update"])->name('update');
+
+Route::post("/reservation",[AdminController::class,"reservation"])->name('reservation');
+
+Route::get("/viewReservation",[AdminController::class,"viewReservation"])->name('viewReservation');
+
+Route::get("/viewChef",[AdminController::class,"viewChef"])->name('viewChef');
+
+Route::post("/uploadChefInfo",[AdminController::class,"uploadChefInfo"])->name(name: 'uploadChefInfo');
+
+
 
 
 Route::get('/dashboard', function () {
