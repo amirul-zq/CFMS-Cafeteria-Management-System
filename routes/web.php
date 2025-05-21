@@ -46,6 +46,8 @@ Route::post("/updateChefInfo/{id}",[AdminController::class,"updateChefInfo"])->n
 
 Route::post('/addcart/{id}', [HomeController::class, 'addcart'])->name('addcart');
 
+Route::get('/showcart/{id}', [HomeController::class, 'showcart'])->name('showcart');
+
 
 
 

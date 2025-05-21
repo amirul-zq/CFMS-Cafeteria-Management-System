@@ -70,19 +70,19 @@ https://templatemo.com/tm-558-klassy-cafe
                             <li class="scroll-to-section"><a href="#reservation">Contact Us</a></li>
 
                             <li class="scroll-to-section">
-                                <a href="#reservation">
-                                    <button type="button" class="btn btn-secondary">
-                                        Cart <span class="badge badge-light">
-                                            @auth
-                                                {{$count}}
-                                            @endauth
-                                            @guest
-                                                0
-                                            @endguest
+                                @auth
+                                    <a href="{{url('/showcart', Auth::user()->id)}}">
 
-                                        </span>
-                                    </button>
-                                </a>
+                                        Cart[{{$count}}]
+                                    </a>
+                                @endauth
+                                @guest
+                                    <a href="#">
+
+                                        Cart[0]
+                                    </a>
+
+                                @endguest
                             </li>
 
 
