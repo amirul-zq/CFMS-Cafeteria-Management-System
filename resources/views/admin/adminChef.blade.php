@@ -34,7 +34,7 @@
                 <div class="form-group">
                     <label for="signatureDishes">Signature Dishes</label>
                     <input style="color: whitesmoke" type="text" class="form-control" name="signatureDishes"
-                        id="signatureDishes" placeholder="Enter Signature Dishes" required>
+                        id="signatureDishes" placeholder="Enter Signature Dishes">
                 </div>
 
                 <div class="form-group">
@@ -48,6 +48,38 @@
 
 
             </form>
+
+            <div class="table-container" style="overflow-x: auto; margin-top: 40px;">
+
+                <table class="table table-bordered table-dark">
+                    <tr align="center">
+                        <th scope="col">Chef Name</th>
+                        <th scope="col">Speciality</th>
+                        <th scope="col">Image</th>
+                        <th scope="col">Action</th>
+                        <th scope="col">Action</th>
+                    </tr>
+
+                    @foreach ($data as $chefs)
+                        <tr align="center">
+                            <td>{{$chefs->name}}</td>
+                            <td>{{$chefs->speciality}}</td>
+                            <td>
+                                @if($chefs->image)
+                                    <img src="/chef_image/{{$chefs->image}}" width="100">
+                                @else
+                                    <span style="color:red;">No Image</span>
+                                @endif
+                            </td>
+                            <td><a href="{{url('/deleteChef', $chefs->id)}}">Delete</td>
+                            <td><a href="{{url('/updateChef', $chefs->id)}}">Update</td>
+
+                        </tr>
+                    @endforeach
+
+
+                </table>
+            </div>
         </div>
 
     </div>

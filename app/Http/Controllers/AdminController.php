@@ -52,8 +52,48 @@ class AdminController extends Controller
 
     public function viewChef ()
     {
+        $data = chefs::all();
+        return view("admin.adminChef",compact("data"));
+    }
 
-        return view("admin.adminChef");
+     public function updateChef ($id)
+    {
+        $data = chefs::find($id);
+        return view("admin.updateChef", compact("data"));
+    }
+
+    public function deleteChef($id)
+    {
+        $data = chefs::find($id);
+        $data->delete();
+        return redirect()->back();
+    }
+
+    public function updateChefInfo (Request $request , $id)
+    {
+        $data = chefs::find($id);
+
+        $image = $request->image;
+        if($image){
+
+        $imageName = time().'.'.$image->getClientOriginalExtension();
+
+        $request->image->move('chef_image',$imageName);
+
+        $data->image = $imageName;
+
+        }
+
+        $data->name = $request->name;
+
+        $data->speciality = $request->speciality;
+
+        $data->signatureDishes = $request->signatureDishes;
+
+        $data->save();
+
+        return redirect()->back();
+
     }
 
     public function uploadChefInfo (Request $request)
@@ -69,8 +109,6 @@ class AdminController extends Controller
         $data->image = $imageName;
 
         $data->name = $request->name;
-
-        $data->speciality = $request->speciality;
 
         $data->speciality = $request->speciality;
 

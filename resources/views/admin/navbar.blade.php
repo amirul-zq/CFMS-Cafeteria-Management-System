@@ -35,6 +35,7 @@
                 <span class="menu-title">Chefs</span>
             </a>
         </li>
+        </li>
         <li class="nav-item menu-items">
             <a class="nav-link" href="{{url('/viewReservation')}}">
                 <span class="menu-icon">

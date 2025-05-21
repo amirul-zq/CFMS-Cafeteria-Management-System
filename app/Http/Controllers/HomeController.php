@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\User;
 use App\Models\Food;
 use App\Models\Chefs;
+use App\Models\Cart;
 
 class HomeController extends Controller
 {
@@ -15,7 +16,15 @@ class HomeController extends Controller
     {
         $data = food::all();
         $chefInfo = chefs::all();
-        return view("home", compact("data", "chefInfo"));
+
+         $count = 0;
+
+        if (Auth::check()) {
+            $user_id = Auth::id();
+            $count = cart::where('user_id', $user_id)->count();
+        }
+
+        return view("home", compact("data", "chefInfo","count"));
 
 
 
@@ -24,6 +33,7 @@ class HomeController extends Controller
     public function redirects()
     {
         $data = food::all();
+        $chefInfo = chefs::all();
         $usertype = Auth::user()->user_type;
 
         if($usertype == "admin")
@@ -32,9 +42,47 @@ class HomeController extends Controller
         }
         else
         {
-            return view ('home',compact('data'));
+            $user_id= Auth::id();
+            $count = cart::where('user_id',$user_id)->count();
+
+            return view ('home',compact('data','chefInfo', 'count'));
         }
 
 
     }
+
+
+    public function addcart(Request $request)
+    {
+
+        if(Auth::id())
+        {
+            $user_id= Auth::id();
+
+            $foodId = $request->food_id;
+            $quantity = $request->quantity;
+            $foodName = $request->food_name;
+
+            $cart = new cart;
+
+            $cart->user_id = $user_id;
+
+            $cart->food_id = $foodId;
+
+            $cart->quantity = $quantity;
+
+            $cart->food_name = $foodName;
+
+            $cart->save();
+
+            return redirect()->back();
+        }
+        else
+        {
+            return redirect('/login');
+        }
+
+    }
+
+
 }

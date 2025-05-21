@@ -38,6 +38,14 @@ Route::get("/viewChef",[AdminController::class,"viewChef"])->name('viewChef');
 
 Route::post("/uploadChefInfo",[AdminController::class,"uploadChefInfo"])->name(name: 'uploadChefInfo');
 
+Route::get("/deleteChef/{id}",[AdminController::class,"deleteChef"])->name('deleteChef');
+
+Route::get("/updateChef/{id}",[AdminController::class,"updateChef"])->name('updateChef');
+
+Route::post("/updateChefInfo/{id}",[AdminController::class,"updateChefInfo"])->name('updateChefInfo');
+
+Route::post('/addcart/{id}', [HomeController::class, 'addcart'])->name('addcart');
+
 
 
 
