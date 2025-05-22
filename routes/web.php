@@ -48,6 +48,12 @@ Route::post('/addcart/{id}', [HomeController::class, 'addcart'])->name('addcart'
 
 Route::get('/showcart/{id}', [HomeController::class, 'showcart'])->name('showcart');
 
+Route::get('/remove/{id}', [HomeController::class, 'remove'])->name('remove');
+
+Route::post('/orderConfirm', [HomeController::class, 'orderConfirm'])->name('orderConfirm');
+
+
+
 
 
 

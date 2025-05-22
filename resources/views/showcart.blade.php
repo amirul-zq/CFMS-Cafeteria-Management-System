@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
     <title>Klassy Cafe - Restaurant HTML Template</title>
     <!--
 
@@ -121,28 +123,106 @@ https://templatemo.com/tm-558-klassy-cafe
 
 
 
-    <div id="top" class="table-container" style="overflow-x: auto; margin-left: 400px; margin-top: 40px; width: 600px;">
+    <div id="top" class="table-container table-responsive"
+        style="overflow-x: auto; margin-left: 400px; margin-top: 40px; width: 600px;">
 
-        <table class="table table-bordered table-dark">
+        <table class="table table-bordered table-dark text-center">
             <tr align="center">
                 <th scope="col">Food Name</th>
                 <th scope="col">Price</th>
                 <th scope="col">Quantity</th>
+                <th scope="col">Action</th>
 
             </tr>
 
-            @foreach ($data as $data)
-                <tr align="center">
-                    <td>{{$data->title}}</td>
-                    <td>{{$data->price}}</td>
-                    <td>{{$data->quantity}}</td>
-                </tr>
-            @endforeach
+            <form action="{{url('/orderConfirm')}}" method="POST">
+                @csrf
+                <table class="table table-bordered table-dark text-center">
+                    <tr align="center">
+                        <th>Food Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Action</th>
+                    </tr>
+
+                    @foreach ($data as $data)
+                        <tr align="center">
+                            <td>
+                                <input type="text" name="foodName[]" value="{{$data->title}}" hidden>
+                                {{$data->title}}
+                            </td>
+                            <td>
+                                <input type="text" name="price[]" value="{{$data->price}}" hidden>
+                                {{$data->price}}
+                            </td>
+                            <td>
+                                <input type="text" name="quantity[]" value="{{$data->quantity}}" hidden>
+                                {{$data->quantity}}
+                            </td>
+                            <td></td>
+                        </tr>
+                    @endforeach
+
+                    @foreach ($data2 as $item)
+                        <tr class="text-center">
+                            <td colspan="3"></td>
+                            <td>
+                                <a href="{{ url('/remove', $item->id) }}" class="btn btn-warning btn-sm"
+                                    style="position: relative; top: -10px;">Remove</a>
+                            </td>
+                        </tr>
+                    @endforeach
+                </table>
+
+                <!-- Order Now button (shows extra fields) -->
+                <div align="center" style="padding: 10px;">
+                    <button type="button" class="btn btn-primary" id="order">Order Now</button>
+                </div>
+
+                <!-- Hidden fields for user input -->
+                <div class="form-floating mb-3" id="appear" style="padding: 10px; display: none;">
+                    <div style="padding: 10px" class="form-floating">
+                        <label for="name">Name</label>
+                        <input class="form-control" id="name" type="text" name="name" placeholder="Enter your name">
+                    </div>
+                    <div style="padding: 10px" class="form-floating">
+                        <label for="phone">Phone Number</label>
+                        <input class="form-control" id="phone" type="number" name="phone"
+                            placeholder="Enter your contact">
+                    </div>
+                    <div style="padding: 10px" class="form-floating">
+                        <label for="address">Address</label>
+                        <input class="form-control" id="address" type="text" name="address"
+                            placeholder="Enter your address">
+                    </div>
+                    <div style="padding: 10px">
+                        <button type="submit" class="btn btn-success">Confirm Order</button>
+                        <button type="button" class="btn btn-danger" id="cancel">Cancel Order</button>
+                    </div>
+                </div>
+            </form>
 
 
-        </table>
+
+
     </div>
 
+
+    <script type="text/javascript">
+
+        $("#order").click(
+            function () {
+                $("#appear").show();
+            }
+        );
+
+        $("#cancel").click(
+            function () {
+                $("#appear").hide();
+            }
+        );
+
+    </script>
 
     <script src="assets/js/jquery-2.1.0.min.js"></script>
 

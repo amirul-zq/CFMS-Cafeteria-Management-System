@@ -9,6 +9,7 @@ use App\Models\User;
 use App\Models\Food;
 use App\Models\Chefs;
 use App\Models\Cart;
+use App\Models\Order;
 
 class HomeController extends Controller
 {
@@ -88,10 +89,46 @@ class HomeController extends Controller
     {
          $count = cart::where('user_id',$id)->count();
 
+         $data2 = cart::where('user_id', $id)->get();
+
          $data = cart::where('user_id',$id)->join('food', 'carts.food_id', '=', 'food.id')->get();
 
-         return view ('showcart',compact('count','data' ));
+         return view ('showcart',compact('count','data', 'data2'));
     }
+
+
+    public function remove($id)
+    {
+        $data = cart::find($id);
+
+        $data->delete();
+
+        return redirect()->back();
+
+    }
+
+
+   public function orderConfirm(Request $request)
+{
+
+    if (!is_array($request->foodName)) {
+        return back()->withErrors(['error' => 'No food items submitted.']);
+    }
+
+    foreach ($request->foodName as $key => $foodName) {
+        $data = new order;
+        $data->foodName = $foodName;
+        $data->price = $request->price[$key] ?? 0;
+        $data->quantity = $request->quantity[$key] ?? 1;
+        $data->name = $request->name ?? 'Guest';
+        $data->phone = $request->phone ?? 'N/A';
+        $data->address = $request->address ?? 'N/A';
+
+        $data->save();
+    }
+
+    return redirect()->back()->with('message', 'Order confirmed successfully!');
+}
 
 
 }
