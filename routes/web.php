@@ -52,6 +52,11 @@ Route::get('/remove/{id}', [HomeController::class, 'remove'])->name('remove');
 
 Route::post('/orderConfirm', [HomeController::class, 'orderConfirm'])->name('orderConfirm');
 
+Route::get("/orders",[AdminController::class,"orders"])->name('orders');
+
+Route::get("/search",[AdminController::class,"search"])->name(name: 'search');
+
+
 
 
 

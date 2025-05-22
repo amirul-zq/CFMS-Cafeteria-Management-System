@@ -7,6 +7,7 @@ use \App\Models\User;
 use \App\Models\Food;
 use \App\Models\Reservation;
 use \App\Models\Chefs;
+use \App\Models\Order;
 use Laravel\Sanctum\Http\Middleware\CheckForAnyScope;
 
 
@@ -190,6 +191,21 @@ class AdminController extends Controller
          $data->save();
 
         return redirect()->back();
+    }
+
+    public function orders()
+    {
+
+        $data = order::all();
+        return view('admin.orders', compact('data'));
+    }
+
+    public function search(Request $request)
+    {
+
+        $search = $request->search;
+        $data = order::where('name', 'Like', '%' . $search . '%')->orWhere('foodName', 'Like', '%' . $search . '%')->get();
+        return view('admin.orders', compact('data'));
     }
 
 }
