@@ -12,14 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
         rel="stylesheet">
 
-    <title>Klassy Cafe - Restaurant HTML Template</title>
-    <!--
-
-TemplateMo 558 Klassy Cafe
-
-https://templatemo.com/tm-558-klassy-cafe
-
--->
+    <title>Klassy Cafe</title>
+    
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
@@ -178,12 +172,17 @@ https://templatemo.com/tm-558-klassy-cafe
                             <h6>About Us</h6>
                             <h2>We Leave A Delicious Memory For You</h2>
                         </div>
-                        <p>Klassy Cafe is one of the best <a href="https://templatemo.com/tag/restaurant"
-                                target="_blank" rel="sponsored">restaurant HTML templates</a> with Bootstrap v4.5.2 CSS
-                            framework. You can download and feel free to use this website template layout for your
-                            restaurant business. You are allowed to use this template for commercial purposes.
-                            <br><br>You are NOT allowed to redistribute the template ZIP file on any template donwnload
-                            website. Please contact us for more information.
+                        <p> <b>
+                                Welcome to a place where every bite tells a story.
+                                Our restaurant is more than just a dining experience; it's a celebration of flavor,
+                                warmth,
+                                and unforgettable moments.
+                                With a passion for fresh ingredients and a love for authentic taste,
+                                we craft dishes that linger in your heart long after your meal is over.
+                                Whether you're here for a casual lunch or a special occasion, we promise to make every
+                                visit
+                                a delicious memory.
+                            </b>
                         </p>
                         <div class="row">
                             <div class="col-4">
@@ -258,10 +257,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-01.png" alt="">
                                                             <h4>Fresh Chicken Salad</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$10.50</h6>
+                                                                <h6>BDT 120</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -269,10 +267,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-02.png" alt="">
                                                             <h4>Orange Juice</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$8.50</h6>
+                                                                <h6>BDT 50</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -280,10 +277,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-03.png" alt="">
                                                             <h4>Fruit Salad</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$9.90</h6>
+                                                                <h6>BDT 80</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -297,10 +293,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-04.png" alt="">
                                                             <h4>Eggs Omelette</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$6.50</h6>
+                                                                <h6>BDT 50</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -308,10 +303,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-05.png" alt="">
                                                             <h4>Dollma Pire</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$5.00</h6>
+                                                                <h6>BDT 180</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -319,10 +313,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-06.png" alt="">
                                                             <h4>Omelette & Cheese</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$4.10</h6>
+                                                                <h6>BDT 100</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -340,10 +333,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-04.png" alt="">
                                                             <h4>Eggs Omelette</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$14</h6>
+                                                                <h6>BDT 50</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -351,10 +343,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-05.png" alt="">
                                                             <h4>Dollma Pire</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$18</h6>
+                                                                <h6>BDT 180</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -362,10 +353,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-06.png" alt="">
                                                             <h4>Omelette & Cheese</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$22</h6>
+                                                                <h6>BDT 100</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -379,10 +369,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-01.png" alt="">
                                                             <h4>Fresh Chicken Salad</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$10</h6>
+                                                                <h6>BDT 150</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -390,10 +379,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-02.png" alt="">
                                                             <h4>Orange Juice</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$20</h6>
+                                                                <h6>BDT 60</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -401,10 +389,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-03.png" alt="">
                                                             <h4>Fruit Salad</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$30</h6>
+                                                                <h6>BDT 100</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -422,10 +409,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-05.png" alt="">
                                                             <h4>Eggs Omelette</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$14</h6>
+                                                                <h6>BDT 50</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -433,10 +419,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-03.png" alt="">
                                                             <h4>Orange Juice</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$18</h6>
+                                                                <h6>BDT 60</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -444,10 +429,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-02.png" alt="">
                                                             <h4>Fruit Salad</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$10</h6>
+                                                                <h6>BDT 100</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -461,10 +445,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-06.png" alt="">
                                                             <h4>Fresh Chicken Salad</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$8.50</h6>
+                                                                <h6>BDT 100</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -472,10 +455,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-01.png" alt="">
                                                             <h4>Dollma Pire</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$9</h6>
+                                                                <h6>BDT 180</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -483,10 +465,9 @@ https://templatemo.com/tm-558-klassy-cafe
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-04.png" alt="">
                                                             <h4>Omelette & Cheese</h4>
-                                                            <p>Lorem ipsum dolor sit amet, consectetur koit adipiscing
-                                                                elit, sed do.</p>
+                                                            <p></p>
                                                             <div class="price">
-                                                                <h6>$11</h6>
+                                                                <h6>BDT 100</h6>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -527,7 +508,7 @@ https://templatemo.com/tm-558-klassy-cafe
                     <div class="left-text-content">
                         <p>© Copyright Klassy Cafe Co.
 
-                            <br>Design: TemplateMo
+
                         </p>
                     </div>
                 </div>
