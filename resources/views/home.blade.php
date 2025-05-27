@@ -13,7 +13,7 @@
         rel="stylesheet">
 
     <title>Klassy Cafe</title>
-    
+
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
 
@@ -257,7 +257,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-01.png" alt="">
                                                             <h4>Fresh Chicken Salad</h4>
-                                                            <p></p>
+                                                            <p>Made from cooked chicken, fresh vegetables (like lettuce,
+                                                                tomatoes, and cucumbers), and a light dressing.</p>
                                                             <div class="price">
                                                                 <h6>BDT 120</h6>
                                                             </div>
@@ -267,7 +268,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-02.png" alt="">
                                                             <h4>Orange Juice</h4>
-                                                            <p></p>
+                                                            <p>Made by extracting juice from fresh oranges, serve with
+                                                                ice and some extra flavor.</p>
                                                             <div class="price">
                                                                 <h6>BDT 50</h6>
                                                             </div>
@@ -277,7 +279,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-03.png" alt="">
                                                             <h4>Fruit Salad</h4>
-                                                            <p></p>
+                                                            <p>A mix of fresh, cut fruits like apples, bananas, grapes,
+                                                                and melons, sometimes served with juice or yogurt.</p>
                                                             <div class="price">
                                                                 <h6>BDT 80</h6>
                                                             </div>
@@ -293,7 +296,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-04.png" alt="">
                                                             <h4>Eggs Omelette</h4>
-                                                            <p></p>
+                                                            <p>Made by beating eggs and frying them, often with added
+                                                                vegetables or herbs.</p>
                                                             <div class="price">
                                                                 <h6>BDT 50</h6>
                                                             </div>
@@ -303,7 +307,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-05.png" alt="">
                                                             <h4>Dollma Pire</h4>
-                                                            <p></p>
+                                                            <p>A traditional dish made from grape leaves stuffed with
+                                                                rice, herbs, and sometimes ground meat.</p>
                                                             <div class="price">
                                                                 <h6>BDT 180</h6>
                                                             </div>
@@ -313,7 +318,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-06.png" alt="">
                                                             <h4>Omelette & Cheese</h4>
-                                                            <p></p>
+                                                            <p>A fried egg omelette filled or topped with melted cheese.
+                                                            </p>
                                                             <div class="price">
                                                                 <h6>BDT 100</h6>
                                                             </div>
@@ -333,7 +339,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-04.png" alt="">
                                                             <h4>Eggs Omelette</h4>
-                                                            <p></p>
+                                                            <p>Made by beating eggs and frying them, often with added
+                                                                vegetables or herbs.</p>
                                                             <div class="price">
                                                                 <h6>BDT 50</h6>
                                                             </div>
@@ -343,7 +350,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-05.png" alt="">
                                                             <h4>Dollma Pire</h4>
-                                                            <p></p>
+                                                            <p>A traditional dish made from grape leaves stuffed with
+                                                                rice, herbs, and sometimes ground meat.</p>
                                                             <div class="price">
                                                                 <h6>BDT 180</h6>
                                                             </div>
@@ -353,7 +361,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-06.png" alt="">
                                                             <h4>Omelette & Cheese</h4>
-                                                            <p></p>
+                                                            <p>A fried egg omelette filled or topped with melted cheese.
+                                                            </p>
                                                             <div class="price">
                                                                 <h6>BDT 100</h6>
                                                             </div>
@@ -369,7 +378,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-01.png" alt="">
                                                             <h4>Fresh Chicken Salad</h4>
-                                                            <p></p>
+                                                            <p>Made from cooked chicken, fresh vegetables (like lettuce,
+                                                                tomatoes, and cucumbers), and a light dressing.</p>
                                                             <div class="price">
                                                                 <h6>BDT 150</h6>
                                                             </div>
@@ -379,7 +389,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-02.png" alt="">
                                                             <h4>Orange Juice</h4>
-                                                            <p></p>
+                                                            <p>Made by extracting juice from fresh oranges, serve with
+                                                                ice and some extra flavor.</p>
                                                             <div class="price">
                                                                 <h6>BDT 60</h6>
                                                             </div>
@@ -389,7 +400,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-03.png" alt="">
                                                             <h4>Fruit Salad</h4>
-                                                            <p></p>
+                                                            <p>A mix of fresh, cut fruits like apples, bananas, grapes,
+                                                                and melons, sometimes served with juice or yogurt.</p>
                                                             <div class="price">
                                                                 <h6>BDT 100</h6>
                                                             </div>
@@ -409,7 +421,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-05.png" alt="">
                                                             <h4>Eggs Omelette</h4>
-                                                            <p></p>
+                                                            <p>Made by beating eggs and frying them, often with added
+                                                                vegetables or herbs.</p>
                                                             <div class="price">
                                                                 <h6>BDT 50</h6>
                                                             </div>
@@ -419,7 +432,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-03.png" alt="">
                                                             <h4>Orange Juice</h4>
-                                                            <p></p>
+                                                            <p>Made by extracting juice from fresh oranges, serve with
+                                                                ice and some extra flavor.</p>
                                                             <div class="price">
                                                                 <h6>BDT 60</h6>
                                                             </div>
@@ -429,7 +443,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-02.png" alt="">
                                                             <h4>Fruit Salad</h4>
-                                                            <p></p>
+                                                            <p>A mix of fresh, cut fruits like apples, bananas, grapes,
+                                                                and melons, sometimes served with juice or yogurt.</p>
                                                             <div class="price">
                                                                 <h6>BDT 100</h6>
                                                             </div>
@@ -445,7 +460,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-06.png" alt="">
                                                             <h4>Fresh Chicken Salad</h4>
-                                                            <p></p>
+                                                            <p>Made from cooked chicken, fresh vegetables (like lettuce,
+                                                                tomatoes, and cucumbers), and a light dressing.</p>
                                                             <div class="price">
                                                                 <h6>BDT 100</h6>
                                                             </div>
@@ -455,7 +471,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-01.png" alt="">
                                                             <h4>Dollma Pire</h4>
-                                                            <p></p>
+                                                            <p>A traditional dish made from grape leaves stuffed with
+                                                                rice, herbs, and sometimes ground meat.</p>
                                                             <div class="price">
                                                                 <h6>BDT 180</h6>
                                                             </div>
@@ -465,7 +482,8 @@
                                                         <div class="tab-item">
                                                             <img src="assets/images/tab-item-04.png" alt="">
                                                             <h4>Omelette & Cheese</h4>
-                                                            <p></p>
+                                                            <p>A fried egg omelette filled or topped with melted cheese.
+                                                            </p>
                                                             <div class="price">
                                                                 <h6>BDT 100</h6>
                                                             </div>
